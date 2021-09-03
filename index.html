@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clave</title>
+    <style>
+       form {
+           width: 300px;
+           padding: 16px;
+           border-radius: 8px;
+           margin: auto;
+           background-color:lightgray;
+       }
+       form label {
+           width: auto; 
+           font-weight: bold;
+           font-family: monospace;
+           display: inline-block;
+           color:peru
+       }
+       form input[type="text"]{
+           width: 95%;
+           padding: 5px;
+           border: 1px solid saddlebrown;
+           background-color:snow;
+           margin: 5px 0;
+           display: inline-block;
+           text-align: left;
+           font-family:monospace;
+       }
+
+       form input[type="submit"]{
+           width: 50%;
+           padding: 8px 16px;
+           margin-top: 25px;
+           border: 2px solid sienna;
+           border-radius: 5px;
+           display: block;
+           background-color: peru;
+       }
+       form input[type="submit"]:hover{
+           cursor:pointer;
+       }
+
+       fieldset legend{
+           font-family: monospace;
+           font-size: 20px;
+       }
+       .key{
+            width: auto; 
+           font-weight: bold;
+           font-family: monospace;
+           text-align: center;
+           color:peru;
+           font-size: 20px;
+           padding: 8px;
+       }
+
+    </style>
+</head>
+<body>
+    <form id="formkey">
+        <fieldset>
+            <legend>Generá tu clave única</legend>
+            <div>
+                <label for="names">Nombre</label> <br>
+                <input id="names" type="text" placeholder="Ingrese su nombre" >
+            </div>
+
+            <div>
+                <label for="lastName">Apellido</label> <br>
+                <input id="lastName" type="text" placeholder="Ingrese su apellido" >
+            </div>
+
+            <div>
+                <label for="ID">DNI</label> <br>
+                <input id="ID" type="text" placeholder="Ingrese su dni sin puntos" >
+            </div>
+
+            <div>
+                <label for="birthDate">Fecha de nacimiento</label> <br>
+                <input id="birthDate" type="text" placeholder="dd/mm/aaaa">
+            </div>
+
+            <div>
+                <input id="button" type="submit" value="Obtené tu clave">
+            </div>
+            
+        </fieldset>
+    </form>
+    <div class="key" id="respuesta">
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
